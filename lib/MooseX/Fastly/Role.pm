@@ -27,7 +27,7 @@ MooseX::Fastly::Role - Instantiate Net::Fastly api from config and purge methods
               fastly_service_id => 'YYYYY',
         };
     },
-);
+  );
 
   with 'MooseX::Fastly::Role';
 
@@ -160,10 +160,6 @@ sub cdn_purge_all {
     return 1;
 }
 
-1;
-
-__DATA__
-
 =head1 SEE ALSO
 
 L<Net::Fastly>
@@ -173,3 +169,5 @@ L<Net::Fastly>
 Leo Lapworth <LLAP@cpan.org>
 
 =cut
+
+1;
