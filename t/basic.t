@@ -16,12 +16,6 @@ SKIP: {
     skip 'Need FASTLY_API_KEY and FASTLY_SERVICE_ID', 3
         unless $ENV{FASTLY_API_KEY};
 
-    my $cdn_api = $app->cdn_api;
-    isa_ok( $cdn_api, 'Net::Fastly' );
-
-    my $services = $app->cdn_services;
-    isa_ok( $services->[0], 'Net::Fastly::Service' );
-
     my $purged = $app->cdn_purge_now(
         {   keys       => [ 'should_never', 'ever_exist' ],
             soft_purge => 1,
