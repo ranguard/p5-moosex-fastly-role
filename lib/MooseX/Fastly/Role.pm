@@ -233,6 +233,11 @@ sub _build_cdn_services {
 
 Leo Lapworth <LLAP@cpan.org>
 
+=head1 LICENSE
+
+This program is free software; you can redistribute it and/or modify it under
+the terms same as Perl 5.
+
 =cut
 
 1;
