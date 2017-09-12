@@ -115,7 +115,7 @@ Purge all is called on all services
 sub cdn_purge_all {
     my ( $self, $args ) = @_;
 
-    my $services = $self->_cdn_service_ids();
+    my $services = $self->_cdn_service_ids_from_config();
 
     foreach my $service_id ( @{$services} ) {
         foreach my $key ( @{ $args->{keys} || [] } ) {
